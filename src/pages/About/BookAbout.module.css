@@ -1,0 +1,50 @@
+.book_about{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 150px;
+    margin-top: 200px;
+}
+.book_overlay{
+    background-color: #2d2d2d;
+    height: 100%;
+    opacity: .89;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.book_container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.book_text{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    z-index: 5;
+    height: 100%;
+}
+.book_text h2{
+    color: white;
+    font-family: var(--poppins);
+}
+.book_text h3{
+    color: #ff4d30;
+}
+.book_text span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.book_text span i{
+    margin-right: 10px;
+    font-size: 2.5rem;
+}
+.book_text h3{
+    font-size: 2.3rem;
+}

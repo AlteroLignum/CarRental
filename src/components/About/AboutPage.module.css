@@ -1,0 +1,45 @@
+.heroes{
+    width: 100%;
+    height: 420px;
+}
+.about_container{
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.about_overlay{
+    background-color: hsla(0,0%,100%,.92);
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+h3{
+    font-size: 3.4rem;
+    color: #010103;
+    font-weight: 700;
+}
+.about_text{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #010103;
+    padding-left: 100px;
+    font-family: var(--poppins);
+}
+a{
+    text-decoration: none;
+    color: #010103;
+}
+.about_text p{
+    font-size: 1.6rem;
+    font-weight: 500;
+}

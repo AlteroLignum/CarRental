@@ -1,0 +1,27 @@
+.download{
+    width: 100%;
+    height: 600px;
+}
+.download_text{
+    width: 40%;
+    height: 300px;
+}
+.download_content{
+    margin-left: 200px;
+    margin-top: 150px;
+}
+
+.download_text h2{
+    font-family: var(--poppins);
+    font-size: 3rem;
+    line-height: 1.1;
+}
+.download_text p{
+    font-size: 1.5rem;
+    margin-top: 50px;
+    color: #706f7b;
+    font-family: var(--rubik);
+}
+.download_image{
+    margin-top: 50px;
+}

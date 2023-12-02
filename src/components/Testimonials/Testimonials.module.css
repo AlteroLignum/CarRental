@@ -1,0 +1,95 @@
+.testimonials_item{
+    background-color: #fff;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,.08);
+    padding: 5.5rem;
+    position: relative;
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.testimonials{
+    background-color: #f8f8f8;
+    padding-bottom: 100px;
+}
+.testimonials_title{
+    text-align: center;
+    padding-top: 200px;
+}
+.testimonials_title h4{
+    font-size: 2rem;
+    font-family: var(--rubik);
+    font-weight: 500;
+}
+.testimonials_title h2{
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.testimonials_title p{
+    color: #706f7b;
+    font-family: var(--rubik);
+    font-size: 1.6rem;
+    line-height: 1.4;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.testimonials_item span{
+    position: absolute;
+    bottom: 33px;
+    color: #ff4d30;
+    font-size: 6.2rem;
+    position: absolute;
+    right: 60px;
+}
+.testimonials_item p{
+    font-family: var(--poppins);
+    font-size: 2rem;
+    font-weight: 500;
+}
+.test_box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+.test_name{
+    display: flex;
+    flex-direction: column;
+}
+.test_box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.test_name h4{
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+.test_name p{
+    font-family: var(--rubik);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.testimonials_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.test_box_second{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.test_box_second img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
