@@ -2,8 +2,9 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 import AboutPage from '../components/About/AboutPage'
+import Models from '../components/Models/Models'
 
-const Models = () => {
+const Modelas = () => {
   const dispatch = useDispatch()
 
   useEffect(()=>{
@@ -13,9 +14,9 @@ const Models = () => {
   return (
     <div>
       <AboutPage/>
-      
+      <Models/>
     </div>
   )
 }
 
-export default Models
+export default Modelas

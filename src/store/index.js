@@ -4,6 +4,7 @@ import { currentCarReducer } from './currentCarReducer'
 import { carArrayReducer } from './carArrayReducer'
 import { combineReducers } from 'redux'
 import { currentList } from './currentList'
+import { carFromAPI } from './carFromAPI'
 
 
 
@@ -11,6 +12,7 @@ const generalReducer = combineReducers({
   current:currentCarReducer,
   array:carArrayReducer,
   currentList: currentList,
+  carFromAPI: carFromAPI,
 })
 
 
