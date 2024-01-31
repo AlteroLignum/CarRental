@@ -14,34 +14,34 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 
 function App() {
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
 
-  useEffect(() =>{
-    async function getData(){
-        const options = {
-        method: 'GET',
-        url: 'https://car-data.p.rapidapi.com/cars',
-        params: {
-          limit: '10',
-          page: '0'
-        },
-        headers: {
-          'X-RapidAPI-Key': '54f98c719cmsh2c16ab686fbc457p1f9c08jsn50498848fd65',
-          'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
-        }
-      };
+  // useEffect(() =>{
+  //   async function getData(){
+  //       const options = {
+  //       method: 'GET',
+  //       url: 'https://car-data.p.rapidapi.com/cars',
+  //       params: {
+  //         limit: '10',
+  //         page: '0'
+  //       },
+  //       headers: {
+  //         'X-RapidAPI-Key': '54f98c719cmsh2c16ab686fbc457p1f9c08jsn50498848fd65',
+  //         'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
+  //       }
+  //     };
       
-      try {
-        const response = await axios.request(options);
-        console.log(response.data);
-        dispatch({type:'GET_CARS',payload:response})
+  //     try {
+  //       const response = await axios.request(options);
+  //       console.log(response.data);
+  //       dispatch({type:'GET_CARS',payload:response})
 
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    getData()
-  },[])
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   }
+  //   getData()
+  // },[])
 
 
   return (
