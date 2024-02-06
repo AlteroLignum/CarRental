@@ -6,7 +6,7 @@ const AboutPage = () => {
   
   
   const list = useSelector(state => state.currentList.list)
-  
+   
   return (
     <section className={s.heroes}>
       <div className={s.about_container} style={{backgroundImage:'url(/images/heroes-bg.png)'}}>

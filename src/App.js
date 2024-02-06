@@ -6,11 +6,12 @@ import About from './pages/About';
 import Modelas from './pages/Models';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
-import "primereact/resources/themes/vela-blue/theme.css";
-import "primereact/resources/primereact.min.css";
-import "primeicons/primeicons.css";
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
 import { useEffect } from 'react';
 import axios from 'axios';
+
 import { useDispatch } from 'react-redux';
 
 function App() {

@@ -1,14 +1,134 @@
 
-const GET_CARS = 'GET_CARS'
-const initialState = []
 
+const initialState = {
+  models: [
+    {
+      name: 'Mercedes-Maybach GLS 600 4MATIC',
+        year: 2020,
+        door: 5,
+        mark: 'Mercedes',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac massa nec elit eleifend suscipit. Phasellus eget tincidunt odio, nec iaculis quam. Ut sapien orci, ultricies nec urna in, ultricies consequat quam. In vel tortor ut lectus semper commodo in sit amet justo. Sed sit amet augue sit amet augue dictum porta. Praesent finibus, tellus sed cursus mollis, eros purus luctus lorem, vitae sodales magna ligula at mi. Nulla augue ex, volutpat in tempor ac, suscipit sit amet tortor. Nulla efficitur, eros ut dignissim sollicitudin, augue diam iaculis arcu, eu volutpat tortor arcu eu nibh. Phasellus pretium scelerisque sodales. Etiam in leo ac nulla lacinia sagittis ac ut eros. Pellentesque nec interdum turpis. Etiam vel nisl dui. Cras facilisis ullamcorper nibh, in varius massa molestie vel. Etiam ultricies ligula at sapien rutrum condimentum.',
+        price: 20000,
+        fuel: 'Бензин',
+        korob: 'Робот',
+        id: 0,
+        image:'https://st4.zr.ru/_ah/img/jVCQbMZxYgltNgH1OJAzrw=s800',
+    },
+    {
+      name: 'Mercedes-Maybach GLS 600 4MATIC',
+        year: 2020,
+        door: 5,
+        mark: 'Mercedes',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac massa nec elit eleifend suscipit. Phasellus eget tincidunt odio, nec iaculis quam. Ut sapien orci, ultricies nec urna in, ultricies consequat quam. In vel tortor ut lectus semper commodo in sit amet justo. Sed sit amet augue sit amet augue dictum porta. Praesent finibus, tellus sed cursus mollis, eros purus luctus lorem, vitae sodales magna ligula at mi. Nulla augue ex, volutpat in tempor ac, suscipit sit amet tortor. Nulla efficitur, eros ut dignissim sollicitudin, augue diam iaculis arcu, eu volutpat tortor arcu eu nibh. Phasellus pretium scelerisque sodales. Etiam in leo ac nulla lacinia sagittis ac ut eros. Pellentesque nec interdum turpis. Etiam vel nisl dui. Cras facilisis ullamcorper nibh, in varius massa molestie vel. Etiam ultricies ligula at sapien rutrum condimentum.',
+        price: 20000,
+        fuel: 'Бензин',
+        korob: 'Робот',
+        id: 0,
+        image:'https://st4.zr.ru/_ah/img/jVCQbMZxYgltNgH1OJAzrw=s800',
+    },
+    {
+      name: 'Mercedes-Maybach GLS 600 4MATIC',
+        year: 2020,
+        door: 5,
+        mark: 'Mercedes',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac massa nec elit eleifend suscipit. Phasellus eget tincidunt odio, nec iaculis quam. Ut sapien orci, ultricies nec urna in, ultricies consequat quam. In vel tortor ut lectus semper commodo in sit amet justo. Sed sit amet augue sit amet augue dictum porta. Praesent finibus, tellus sed cursus mollis, eros purus luctus lorem, vitae sodales magna ligula at mi. Nulla augue ex, volutpat in tempor ac, suscipit sit amet tortor. Nulla efficitur, eros ut dignissim sollicitudin, augue diam iaculis arcu, eu volutpat tortor arcu eu nibh. Phasellus pretium scelerisque sodales. Etiam in leo ac nulla lacinia sagittis ac ut eros. Pellentesque nec interdum turpis. Etiam vel nisl dui. Cras facilisis ullamcorper nibh, in varius massa molestie vel. Etiam ultricies ligula at sapien rutrum condimentum.',
+        price: 20000,
+        fuel: 'Бензин',
+        korob: 'Робот',
+        id: 0,
+        image:'https://st4.zr.ru/_ah/img/jVCQbMZxYgltNgH1OJAzrw=s800',
+    },
+  {
+      name: 'Mercedes-Maybach GLS 600 4MATIC',
+        year: 2020,
+        door: 5,
+        mark: 'Mercedes',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac massa nec elit eleifend suscipit. Phasellus eget tincidunt odio, nec iaculis quam. Ut sapien orci, ultricies nec urna in, ultricies consequat quam. In vel tortor ut lectus semper commodo in sit amet justo. Sed sit amet augue sit amet augue dictum porta. Praesent finibus, tellus sed cursus mollis, eros purus luctus lorem, vitae sodales magna ligula at mi. Nulla augue ex, volutpat in tempor ac, suscipit sit amet tortor. Nulla efficitur, eros ut dignissim sollicitudin, augue diam iaculis arcu, eu volutpat tortor arcu eu nibh. Phasellus pretium scelerisque sodales. Etiam in leo ac nulla lacinia sagittis ac ut eros. Pellentesque nec interdum turpis. Etiam vel nisl dui. Cras facilisis ullamcorper nibh, in varius massa molestie vel. Etiam ultricies ligula at sapien rutrum condimentum.',
+        price: 20000,
+        fuel: 'Бензин',
+        korob: 'Робот',
+        id: 0,
+        image:'https://st4.zr.ru/_ah/img/jVCQbMZxYgltNgH1OJAzrw=s800',
+    },
+    {
+      name: 'Mercedes-Maybach GLS 600 4MATIC',
+        year: 2020,
+        door: 5,
+        mark: 'Mercedes',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac massa nec elit eleifend suscipit. Phasellus eget tincidunt odio, nec iaculis quam. Ut sapien orci, ultricies nec urna in, ultricies consequat quam. In vel tortor ut lectus semper commodo in sit amet justo. Sed sit amet augue sit amet augue dictum porta. Praesent finibus, tellus sed cursus mollis, eros purus luctus lorem, vitae sodales magna ligula at mi. Nulla augue ex, volutpat in tempor ac, suscipit sit amet tortor. Nulla efficitur, eros ut dignissim sollicitudin, augue diam iaculis arcu, eu volutpat tortor arcu eu nibh. Phasellus pretium scelerisque sodales. Etiam in leo ac nulla lacinia sagittis ac ut eros. Pellentesque nec interdum turpis. Etiam vel nisl dui. Cras facilisis ullamcorper nibh, in varius massa molestie vel. Etiam ultricies ligula at sapien rutrum condimentum.',
+        price: 20000,
+        fuel: 'Бензин',
+        korob: 'Робот',
+        id: 0,
+        image:'https://st4.zr.ru/_ah/img/jVCQbMZxYgltNgH1OJAzrw=s800',
+    },
+    {
+      name: 'Mercedes-Maybach GLS 600 4MATIC',
+        year: 2020,
+        door: 5,
+        mark: 'Mercedes',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac massa nec elit eleifend suscipit. Phasellus eget tincidunt odio, nec iaculis quam. Ut sapien orci, ultricies nec urna in, ultricies consequat quam. In vel tortor ut lectus semper commodo in sit amet justo. Sed sit amet augue sit amet augue dictum porta. Praesent finibus, tellus sed cursus mollis, eros purus luctus lorem, vitae sodales magna ligula at mi. Nulla augue ex, volutpat in tempor ac, suscipit sit amet tortor. Nulla efficitur, eros ut dignissim sollicitudin, augue diam iaculis arcu, eu volutpat tortor arcu eu nibh. Phasellus pretium scelerisque sodales. Etiam in leo ac nulla lacinia sagittis ac ut eros. Pellentesque nec interdum turpis. Etiam vel nisl dui. Cras facilisis ullamcorper nibh, in varius massa molestie vel. Etiam ultricies ligula at sapien rutrum condimentum.',
+        price: 20000,
+        fuel: 'Бензин',
+        korob: 'Робот',
+        id: 0,
+        image:'https://st4.zr.ru/_ah/img/jVCQbMZxYgltNgH1OJAzrw=s800',
+    },
+    {
+      name: 'Mercedes-Maybach GLS 600 4MATIC',
+        year: 2020,
+        door: 5,
+        mark: 'Mercedes',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac massa nec elit eleifend suscipit. Phasellus eget tincidunt odio, nec iaculis quam. Ut sapien orci, ultricies nec urna in, ultricies consequat quam. In vel tortor ut lectus semper commodo in sit amet justo. Sed sit amet augue sit amet augue dictum porta. Praesent finibus, tellus sed cursus mollis, eros purus luctus lorem, vitae sodales magna ligula at mi. Nulla augue ex, volutpat in tempor ac, suscipit sit amet tortor. Nulla efficitur, eros ut dignissim sollicitudin, augue diam iaculis arcu, eu volutpat tortor arcu eu nibh. Phasellus pretium scelerisque sodales. Etiam in leo ac nulla lacinia sagittis ac ut eros. Pellentesque nec interdum turpis. Etiam vel nisl dui. Cras facilisis ullamcorper nibh, in varius massa molestie vel. Etiam ultricies ligula at sapien rutrum condimentum.',
+        price: 20000,
+        fuel: 'Бензин',
+        korob: 'Робот',
+        id: 0,
+        image:'https://st4.zr.ru/_ah/img/jVCQbMZxYgltNgH1OJAzrw=s800',
+    },
+    {
+      name: 'Mercedes-Maybach GLS 600 4MATIC',
+        year: 2020,
+        door: 5,
+        mark: 'Mercedes',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac massa nec elit eleifend suscipit. Phasellus eget tincidunt odio, nec iaculis quam. Ut sapien orci, ultricies nec urna in, ultricies consequat quam. In vel tortor ut lectus semper commodo in sit amet justo. Sed sit amet augue sit amet augue dictum porta. Praesent finibus, tellus sed cursus mollis, eros purus luctus lorem, vitae sodales magna ligula at mi. Nulla augue ex, volutpat in tempor ac, suscipit sit amet tortor. Nulla efficitur, eros ut dignissim sollicitudin, augue diam iaculis arcu, eu volutpat tortor arcu eu nibh. Phasellus pretium scelerisque sodales. Etiam in leo ac nulla lacinia sagittis ac ut eros. Pellentesque nec interdum turpis. Etiam vel nisl dui. Cras facilisis ullamcorper nibh, in varius massa molestie vel. Etiam ultricies ligula at sapien rutrum condimentum.',
+        price: 20000,
+        fuel: 'Бензин',
+        korob: 'Робот',
+        id: 0,
+        image:'https://st4.zr.ru/_ah/img/jVCQbMZxYgltNgH1OJAzrw=s800',
+    },
+    {
+      name: 'Mercedes-Maybach GLS 600 4MATIC',
+        year: 2020,
+        door: 5,
+        mark: 'Mercedes',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac massa nec elit eleifend suscipit. Phasellus eget tincidunt odio, nec iaculis quam. Ut sapien orci, ultricies nec urna in, ultricies consequat quam. In vel tortor ut lectus semper commodo in sit amet justo. Sed sit amet augue sit amet augue dictum porta. Praesent finibus, tellus sed cursus mollis, eros purus luctus lorem, vitae sodales magna ligula at mi. Nulla augue ex, volutpat in tempor ac, suscipit sit amet tortor. Nulla efficitur, eros ut dignissim sollicitudin, augue diam iaculis arcu, eu volutpat tortor arcu eu nibh. Phasellus pretium scelerisque sodales. Etiam in leo ac nulla lacinia sagittis ac ut eros. Pellentesque nec interdum turpis. Etiam vel nisl dui. Cras facilisis ullamcorper nibh, in varius massa molestie vel. Etiam ultricies ligula at sapien rutrum condimentum.',
+        price: 20000,
+        fuel: 'Бензин',
+        korob: 'Робот',
+        id: 0,
+        image:'https://st4.zr.ru/_ah/img/jVCQbMZxYgltNgH1OJAzrw=s800',
+    },
+    {
+      name: 'Mercedes-Maybach GLS 600 4MATIC',
+        year: 2020,
+        door: 5,
+        mark: 'Mercedes',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac massa nec elit eleifend suscipit. Phasellus eget tincidunt odio, nec iaculis quam. Ut sapien orci, ultricies nec urna in, ultricies consequat quam. In vel tortor ut lectus semper commodo in sit amet justo. Sed sit amet augue sit amet augue dictum porta. Praesent finibus, tellus sed cursus mollis, eros purus luctus lorem, vitae sodales magna ligula at mi. Nulla augue ex, volutpat in tempor ac, suscipit sit amet tortor. Nulla efficitur, eros ut dignissim sollicitudin, augue diam iaculis arcu, eu volutpat tortor arcu eu nibh. Phasellus pretium scelerisque sodales. Etiam in leo ac nulla lacinia sagittis ac ut eros. Pellentesque nec interdum turpis. Etiam vel nisl dui. Cras facilisis ullamcorper nibh, in varius massa molestie vel. Etiam ultricies ligula at sapien rutrum condimentum.',
+        price: 20000,
+        fuel: 'Бензин',
+        korob: 'Робот',
+        id: 0,
+        image:'https://st4.zr.ru/_ah/img/jVCQbMZxYgltNgH1OJAzrw=s800',
+    },
+    
+  ]
+}
 
 
 export const carFromAPI = (state = initialState,action) =>{
     switch (action.type) {
-        case GET_CARS:
-          let val = { ...state, current: action.payload}
-          return val
         default:
           return state
         }

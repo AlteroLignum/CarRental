@@ -1,5 +1,10 @@
-.card_container{
-    width: 80%;
-    height: 50px;
-    background-color: aquamarine;
+.btn_book{
+    width:80%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+}
+.card_book{
+    justify-content: center;
 }

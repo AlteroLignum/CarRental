@@ -64,7 +64,6 @@ const initialState = {
 
 export const carArrayReducer = (state = initialState, action) => {
   switch (action.type) {
-
     default:
       return state
   }
