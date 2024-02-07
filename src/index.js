@@ -9,21 +9,15 @@ import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import { ThemeProvider, createTheme } from '@material-ui/core';
+import Theme from './Theme.jsx';
 
-const theme = createTheme({
-  palette:{
-    primary:{
-      main: '#ff4d30'
-    }
-    
-  }
-})
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <BrowserRouter>
     <Provider store={store}>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={Theme}>
         <App />
       </ThemeProvider>
     </Provider>

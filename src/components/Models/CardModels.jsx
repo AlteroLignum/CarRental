@@ -1,15 +1,22 @@
 import React from 'react'
 import s from './CardModels.module.css'
-import { Button, Card, CardContent, CardMedia, Grid, Typography } from '@material-ui/core'
-import { typography } from '@mui/system';
-import { CardActions } from '@mui/material';
+import { Button, CardMedia,CardContent } from '@material-ui/core'
+import Typography from '@mui/material/Typography';
+import CardActions from '@mui/material/CardActions'
+import Grid from '@mui/material/Grid'
+import Card from '@mui/material/Card'
+
 const CardModels = ({data}) => {
   
   
   return (
     <>
     < Grid item xs={12} sm={6} md={4} lg={3} >
-      <Card >
+      <Card style={{height:'100%'}} sx={{ 
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+  }}>
           <CardMedia
            image={data.image}
            alt={data.name}
@@ -26,9 +33,7 @@ const CardModels = ({data}) => {
             <Typography
               variant='h4'
               component='h3'
-              sx={{
-                fontWeight:'bold'
-              }}
+              fontWeightBold
             >
               {data.name}
             </Typography>
@@ -36,8 +41,9 @@ const CardModels = ({data}) => {
               Цена: {data.price} руб.
             </Typography>
           </CardContent>
-          <CardActions className={s.card_book} sx={{
-            mb:4
+          <CardActions className={s.card_book} disableSpacing sx={{
+            mb:4,
+            mt: "auto" 
           }}>
             <Button className={s.btn_book} variant='contained' color='primary' style={{fontSize: 20}}>
               Забронировать
