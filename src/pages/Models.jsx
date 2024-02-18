@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 import AboutPage from '../components/About/AboutPage'
 import Models from '../components/Models/Models'
+import BookAbout from './About/BookAbout'
 
 const Modelas = () => {
   const dispatch = useDispatch()
@@ -15,6 +16,7 @@ const Modelas = () => {
     <div>
       <AboutPage/>
       <Models/>
+      <BookAbout/>
     </div>
   )
 }
