@@ -1,13 +1,10 @@
 .testimonials_item{
     background-color: #fff;
     box-shadow: 0 20px 40px 0 rgba(0,0,0,.08);
-    padding: 5.5rem;
-    position: relative;
-    width: 40%;
-    height: 500px;
+    padding: 4rem 4rem;
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-around;
 }
 .testimonials{
     background-color: #f8f8f8;
@@ -22,17 +19,13 @@
     font-family: var(--rubik);
     font-weight: 500;
 }
-.testimonials_title h2{
-    font-family: var(--poppins);
-    font-weight: 700;
-    font-size: 3.5rem;
-}
+ 
 .testimonials_title p{
     color: #706f7b;
     font-family: var(--rubik);
     font-size: 1.6rem;
     line-height: 1.4;
-    width: 50%;
+    
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -43,18 +36,18 @@
     bottom: 33px;
     color: #ff4d30;
     font-size: 6.2rem;
-    position: absolute;
+    bottom: 60px;
     right: 60px;
 }
 .testimonials_item p{
     font-family: var(--poppins);
-    font-size: 2rem;
+   
     font-weight: 500;
 }
 .test_box{
     display: flex;
     flex-direction: row;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .test_name{
     display: flex;

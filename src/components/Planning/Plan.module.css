@@ -6,7 +6,9 @@
 }
 .plan_container{
     display: flex;
+    margin-bottom: 100px;
     flex-direction: column;
+    padding-top: 100px;
 }
 .plan_title{
     display: flex;
@@ -16,6 +18,7 @@
     margin-left: auto;
     margin-right: auto;
     
+    text-align: center;
 }
 .plan_title h2{
     font-family: var(--poppins);
@@ -36,7 +39,7 @@
     justify-content: space-around;
 }
 .plan_option{
-    display: flex;
+    
     flex-direction: column;
     text-align: center;
 }
@@ -55,5 +58,4 @@
     font-family: var(--rubik);
     font-size: 1.3rem;
     color: #706f7b;
-    width: 400px;
 }

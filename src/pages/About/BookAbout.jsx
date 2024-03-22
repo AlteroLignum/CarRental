@@ -2,7 +2,7 @@ import React from 'react'
 import s from './BookAbout.module.css'
 import Box from '@mui/system/Box';
 import { Container, Typography } from '@mui/material';
-import { Grid } from '@material-ui/core';
+import { Grid } from '@mui/material';
 import CallRoundedIcon from '@mui/icons-material/CallRounded';              
 
 
@@ -11,7 +11,7 @@ const BookAbout = () => {
     <>
     <Container maxWidth={false} disableGutters>
       <Box sx={{
-        height:250,
+        height: 270,
         backgroundImage:'url(/images/book-banner.png)',
         bgcolor: 'rgba(0, 0, 0, 0.54)',
         backgroundRepeat: `no-repeat`,
@@ -26,7 +26,7 @@ const BookAbout = () => {
             left: 0,
             right: 0,
             bottom: 0,
-            bgcolor: 'rgba(0,0,0,0.7)',
+            bgcolor: 'rgba(45,45,45,0.9)',
             zIndex:5,
             height:'100%',
             width:'100%',
@@ -34,9 +34,21 @@ const BookAbout = () => {
             <Grid container direction="row"
               justifyContent="center"
               alignItems="center" 
+              sx={{
+                height: '100%',
+                
+              }}
+              
+              columnGap={10}
               >
               <Grid item>
-                  <Typography variant='h4' component='h3' sx={{color:'white'}}>Забронируйте автомобиль, связавшись с нами</Typography>
+                  <Typography variant='h4' component='h3' 
+                  align='center'
+                  sx={{
+                    color:'white',
+                    fontFamily: 'var(--rubik)',
+                    fontWeight: 700
+                    }}>Забронируйте автомобиль, связавшись с нами</Typography>
               </Grid>
               <Grid item >
                   <Box sx={{
@@ -52,20 +64,7 @@ const BookAbout = () => {
           </Box>
       </Box>
     </Container>
-    {/* <div className={s.book_about} style={{backgroundImage:'url(/images/book-banner.png)'}}>
-        <div className={s.book_overlay} >
-
-        </div>
-        <div className={s.book_container}>
-            <div className={s.book_text}>
-                <h2>Забронируйте автомобиль, связавшись с нами</h2>
-                <span>
-                    <i class="fa-solid fa-phone" style={{color: '#ff4d30'}}></i>
-                    <h3>(123) 456-7890</h3>
-                </span>
-            </div>
-        </div>
-    </div> */}
+    
     
     </>
   )

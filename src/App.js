@@ -5,14 +5,12 @@ import Home from './pages/Home/Home';
 import About from './pages/About';
 import Modelas from './pages/Models';
 import Testimonials from './pages/Testimonials';
-import Contact from './pages/Contact';
+
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import { useEffect } from 'react';
-import axios from 'axios';
 
-import { useDispatch } from 'react-redux';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   // const dispatch = useDispatch()
@@ -53,7 +51,7 @@ function App() {
         <Route path='about' element={<About/>}/>
         <Route path='models' element={<Modelas/>}/>
         <Route path='testimonials' element={<Testimonials/>}/>
-        <Route path='contact' element={<Contact/>}/>
+        <Route path='contact' element={<ContactUs/>}/>
       </Route>
     </Routes>
     </>

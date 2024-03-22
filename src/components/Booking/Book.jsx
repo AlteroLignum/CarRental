@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import s from './Book.module.css'
 import Form from './Form'
 import Modal from '../Modal/Modal'
+import { Box, Container, Typography } from '@mui/material'
 
 
 const Book = () => {
@@ -15,6 +16,13 @@ const Book = () => {
     const [pickUp,setPickUp] = useState('Москва')
     const [dropOff,setDropOff] = useState('Москва')
     const[getProposal,setGetProposal] = useState(false)
+
+    const [details,setDetails] = useState({
+        firstDate:'',
+        lastDate:'',
+        pickUp:'Москва',
+        dropOff:'Москва',        
+    })
 
 
     useEffect(() => {
@@ -49,9 +57,9 @@ const Book = () => {
     return (
         <>
             <section className={s.book_container}>
-                <div className={s.book_item}>
-                    <div className={s.book_content} style={{ backgroundImage: 'url(/images/book-bg.png)' }}>
-                        <h2>Аренда машины</h2>
+                <Container className={s.book_item} maxWidth={false}>
+                    <Box className={s.book_content} style={{ backgroundImage: 'url(/images/book-bg.png)' }}>
+                        <Typography variant='h2' sx={{fontFamily:'var(--poppins)',fontWeight: 600}}>Аренда машины</Typography>
                         <Form 
                         setMessage={setMessage} 
                         message={message} 
@@ -64,8 +72,8 @@ const Book = () => {
                         getProposal={getProposal}
                         setGetProposal={setGetProposal}
                         />
-                    </div>
-                </div>
+                    </Box>
+                </Container>
                 <Modal 
                 message={message} 
                 setMessage={setMessage} 

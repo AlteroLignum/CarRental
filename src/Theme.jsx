@@ -5,6 +5,12 @@ const theme = createTheme({
       primary:{
         main: '#ff4d30'
       } 
+    },
+    typography: {
+      button: {
+        textTransform: 'none'
+      }
     }
+  
   })
 export default responsiveFontSizes(theme)
