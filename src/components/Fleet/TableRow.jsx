@@ -7,6 +7,8 @@ const TableRow = () => {
 
     const currentId = useSelector(state => state.current.currentID)
     const description = useSelector(state => state.array.description)
+    
+    
 
     return (
         <>

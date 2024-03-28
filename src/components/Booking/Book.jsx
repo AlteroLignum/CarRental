@@ -56,7 +56,7 @@ const Book = () => {
 
     return (
         <>
-            <section className={s.book_container}>
+            <section className={s.book_container} id='booking_section'>
                 <Container className={s.book_item} maxWidth={false}>
                     <Box className={s.book_content} style={{ backgroundImage: 'url(/images/book-bg.png)' }}>
                         <Typography variant='h2' sx={{fontFamily:'var(--poppins)',fontWeight: 600}}>Аренда машины</Typography>

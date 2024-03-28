@@ -1,13 +1,14 @@
 import React from 'react'
 import s from './Fleet.module.css'
 import { useDispatch, useSelector } from 'react-redux'
+import { Button, Stack } from '@mui/material'
 
 
 const CarItem = () => {
 
     const dispatch = useDispatch()
     const cash = useSelector(state => state.array.models)
-
+    
 
     
     const chooseMachine = (e) =>{
@@ -17,17 +18,16 @@ const CarItem = () => {
 
     return (
         <>
-            <div className={s.car_models}>
+            <Stack sx={{width:'80%',marginX:'auto'}} gap={2}>
                 {
-                    
                     cash.map( (item,index) => {
                         return (
-                            <button className={s.cash} onClick={(e) => chooseMachine(e.target)} value={item} id={index}>
+                            <div className={s.cash}  onClick={(e) => chooseMachine(e.target)} value={item} id={index}>
                                 {item}
-                            </button>)
+                            </div>)
                     })
                 }
-            </div>
+            </Stack>
         </>
     )
 }

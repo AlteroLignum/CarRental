@@ -28,13 +28,7 @@
     font-weight: 600;
     margin-bottom: 0.7rem;
 }
-.left_side h2{
-    font-size: 4.2rem;
-    line-height: 1.1;
-    margin-bottom: 2rem;
-    font-weight: 700;
-    font-family: var(--poppins)
-}
+
 .left_side p{
     color: #706f7b;
     font-family: Rubik,sans-serif;

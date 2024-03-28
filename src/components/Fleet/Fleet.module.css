@@ -12,11 +12,7 @@
     font-family: var(--rubik);
     font-size: 2rem;
 }
-.pick_title h2{
-    font-size: 3.3rem;
-    font-weight: 600;
-    font-family: var(--poppins);
-}
+
 .pick_title p{
     font-family: var(--rubik);
     color: #706f7b;
@@ -60,13 +56,14 @@
     align-items: center;
 }
 .general_car{
-    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
     height: fit-content;
 
 }
 .general_table{
     font-family: var(--poppins);
-    margin-top: 50px;
+    
 }
 .car_container{
     width: 100%;

@@ -1,21 +1,21 @@
 .container{
     width: 100%;
-    height: 900px;
+    height: fit-content;
     background-color: #f8f8f8;
-    position: relative;
+    
 }
 .background{
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 .hero_content{
     align-items: center;
     display: flex;
-    height: 500px;
-    position: relative;
-    width: 90%;
+    height: fit-content;
+    
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
@@ -23,11 +23,10 @@
 .hero_text{
     display: flex;
     flex-direction: column;
-    margin-top: 250px;
+    
     max-width: 50rem;
     z-index: 3;
     color: #010103;
-    
 }
 .hero_text h4{
     font-size: 2rem;
@@ -36,12 +35,12 @@
 }
 .hero_text h1{
     font-family: var(--poppins);
-    font-size: 4.5rem;
+    
     line-height: 1;
     margin-top: 40px;
 }
 .hero_text h1 span{
-    color: #ff4d30;;
+    color: #ff4d30;
 }
 .hero_text p{
     color: #706f7b;
@@ -52,11 +51,12 @@
     width: 80%;
 }
 .main_car{
-    margin-top: 5rem;
-    position: absolute;
+    
+    z-index: 200;
+    height: 'fit-content';
+    margin-top: 20;
+    position: 'absolute';
     right: 0;
-    width: 55%;
-    z-index: 2;
 }
 .hero_buttons a{
     text-decoration: none;
@@ -64,6 +64,10 @@
 }
 .hero_buttons{
     margin-top: 80px;
+}
+.display_car{
+    max-width: 100%;
+    max-height: 100%;
 }
 .book_ride{
     background-color: #ff4d30;

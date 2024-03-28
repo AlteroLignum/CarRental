@@ -11,7 +11,7 @@ const CarTable = () => {
       <div className={s.table_container}>
           <TableRow/>
           <div className={s.table_reserve}>
-            <a className={s.reserve_link}>Заказать</a>
+            <a href='#booking_section'className={s.reserve_link}>Заказать</a>
           </div>
       </div>
     

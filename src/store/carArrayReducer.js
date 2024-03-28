@@ -13,6 +13,7 @@ const initialState = {
         fuel: 'Бензин',
         korob: 'Робот',
         id: 0,
+        image: '/images/Audi.webp'
       },],
     [
       {
@@ -24,6 +25,7 @@ const initialState = {
         fuel: 'Бензин',
         korob: 'Робот',
         id: 1,
+        image:'/images/Sportage.jfif'
       },],
     [
       {
@@ -35,6 +37,7 @@ const initialState = {
         fuel: 'Бензин',
         korob: 'Робот',
         id: 2,
+        image: '/images/Lexus.jfif'
       },],
     [
       {
@@ -46,6 +49,7 @@ const initialState = {
         fuel: 'Бензин',
         korob: 'Робот',
         id: 3,
+        image: '/images/x6.jpg'
       },],
     [
       {
@@ -57,6 +61,7 @@ const initialState = {
         fuel: 'Бензин',
         korob: 'Автомат',
         id: 4,
+        image: '/images/Mazda.jfif'
       },],
 
   ]
