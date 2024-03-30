@@ -45,7 +45,7 @@ const Modal = ({ message, setMessage, carImg, carName, firstDate, lastDate, pick
                         <CloseIcon onClick={(e) => handleModal()}></CloseIcon>
                     </div>
                     <Grid container direction={'column'} >
-                        <Grid item direction={'row'} sx={{ backgroundColor: '#ffeae6' }}>
+                        <Grid item sx={{ backgroundColor: '#ffeae6' }}>
                             <Container maxWidth={'xl'} sx={{ paddingY: 5 }}>
                                 <Typography variant='h4' sx={{ color: '#ff4d30', fontWeight: 700 }}>
                                     <ErrorIcon sx={{ color: '#ff4d30', marginRight: 2 }} fontSize='large' ></ErrorIcon>

@@ -22,7 +22,7 @@ const CarItem = () => {
                 {
                     cash.map( (item,index) => {
                         return (
-                            <div className={s.cash}  onClick={(e) => chooseMachine(e.target)} value={item} id={index}>
+                            <div className={s.cash} key={index} onClick={(e) => chooseMachine(e.target)} value={item} id={index}>
                                 {item}
                             </div>)
                     })

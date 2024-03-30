@@ -62,7 +62,7 @@ const Contact = () => {
                   </Box>
                 </Box>
               </Grid>
-              <Grid sx={{ width: '50%' }} md={6} sm={12} xs={12}>
+              <Grid item sx={{ width: '50%' }} md={6} sm={12} xs={12}>
                 <FormControl>
                   <Grid container spacing={1} mt={15}>
                     <Grid xs={12} sm={6} item >

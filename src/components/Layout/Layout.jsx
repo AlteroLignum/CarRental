@@ -36,16 +36,16 @@ const Layout = () => {
                             <a href='/' className={s.register} onClick={(e) => e.preventDefault()}>Регистрация</a>
                         </Grid>
                         <Grid item sx={{display:{xs:'flex',lg:'none'}}}>
-                            <IconButton size='large'>
-                                <MenuIcon onClick={openChange}></MenuIcon>
+                            <IconButton size='large' onClick={openChange}>
+                                <MenuIcon ></MenuIcon>
                             </IconButton>
                         </Grid>
                     </Grid>
                 </Container>
                 <Dialog open={open} onClose={closeChange} fullScreen>
                     <DialogTitle textAlign={'right'}>
-                        <IconButton edge="end" size='large'>
-                            <CloseIcon onClick={closeChange}></CloseIcon>
+                        <IconButton edge="end" size='large' onClick={closeChange}>
+                            <CloseIcon ></CloseIcon>
                         </IconButton>
                     </DialogTitle>
                     <DialogContent>
