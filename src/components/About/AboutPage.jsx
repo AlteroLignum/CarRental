@@ -2,7 +2,7 @@ import React from 'react'
 import s from './AboutPage.module.css'
 import { useDispatch,useSelector } from 'react-redux'
 
-const AboutPage = () => {
+const AboutPage = () => { 
   
   
   const list = useSelector(state => state.currentList.list)

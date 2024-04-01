@@ -34,7 +34,8 @@ const Modal = ({ message, setMessage, carImg, carName, firstDate, lastDate, pick
         input.forEach(item => item.value = '')
 
     }
-
+   
+    
 
     return (
         <>

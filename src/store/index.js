@@ -1,19 +1,16 @@
-import { legacy_createStore as createStore} from 'redux'
-import { composeWithDevTools} from 'redux-devtools-extension'
+import { legacy_createStore as createStore, combineReducers } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
 import { currentCarReducer } from './currentCarReducer'
 import { carArrayReducer } from './carArrayReducer'
-import { combineReducers } from 'redux'
+
 import { currentList } from './currentList'
 import { carFromAPI } from './carFromAPI'
 
-
-
 const generalReducer = combineReducers({
-  current:currentCarReducer,
-  array:carArrayReducer,
-  currentList: currentList,
-  carFromAPI: carFromAPI,
+  current: currentCarReducer,
+  array: carArrayReducer,
+  currentList,
+  carFromAPI
 })
 
-
- export const store = createStore(generalReducer,composeWithDevTools())
+export const store = createStore(generalReducer, composeWithDevTools())

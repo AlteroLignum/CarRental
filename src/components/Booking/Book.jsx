@@ -3,7 +3,7 @@ import s from './Book.module.css'
 import Form from './Form'
 import Modal from '../Modal/Modal'
 import { Box, Container, Typography } from '@mui/material'
-
+ 
 
 const Book = () => {
 
@@ -17,12 +17,7 @@ const Book = () => {
     const [dropOff,setDropOff] = useState('Москва')
     const[getProposal,setGetProposal] = useState(false)
 
-    const [details,setDetails] = useState({
-        firstDate:'',
-        lastDate:'',
-        pickUp:'Москва',
-        dropOff:'Москва',        
-    })
+    
 
 
     useEffect(() => {

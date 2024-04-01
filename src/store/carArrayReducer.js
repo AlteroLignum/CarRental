@@ -1,5 +1,3 @@
-
-
 const initialState = {
   models: ['Audi R8', 'Kia Sportage', 'Lexus RX', 'BMW X6', 'Mazda CX-9'],
   description: [
@@ -14,7 +12,7 @@ const initialState = {
         korob: 'Робот',
         id: 0,
         image: '/images/Audi.webp'
-      },],
+      }],
     [
       {
         name: 'Kia Sportage',
@@ -25,8 +23,8 @@ const initialState = {
         fuel: 'Бензин',
         korob: 'Робот',
         id: 1,
-        image:'/images/Sportage.jfif'
-      },],
+        image: '/images/Sportage.jfif'
+      }],
     [
       {
         name: 'Lexus RX',
@@ -38,7 +36,7 @@ const initialState = {
         korob: 'Робот',
         id: 2,
         image: '/images/Lexus.jfif'
-      },],
+      }],
     [
       {
         name: 'BMW X6',
@@ -50,7 +48,7 @@ const initialState = {
         korob: 'Робот',
         id: 3,
         image: '/images/x6.jpg'
-      },],
+      }],
     [
       {
         name: 'Mazda CX-9',
@@ -62,7 +60,7 @@ const initialState = {
         korob: 'Автомат',
         id: 4,
         image: '/images/Mazda.jfif'
-      },],
+      }]
 
   ]
 }
