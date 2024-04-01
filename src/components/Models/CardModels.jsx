@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import s from './CardModels.module.css'
-import { Button, CardMedia,CardContent } from '@material-ui/core'
+
 import Typography from '@mui/material/Typography';
 import CardActions from '@mui/material/CardActions'
 import Grid from '@mui/material/Grid'
 import Card from '@mui/material/Card'
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
+import { Button, CardContent, CardMedia } from '@mui/material';
 
 
 const CardModels = ({data}) => {

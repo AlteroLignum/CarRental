@@ -7,8 +7,9 @@ import { Provider } from 'react-redux'
 import 'primereact/resources/themes/saga-blue/theme.css'
 import 'primereact/resources/primereact.min.css'
 import 'primeicons/primeicons.css'
-import { ThemeProvider } from '@material-ui/core'
+
 import Theme from './Theme.jsx'
+import { ThemeProvider } from '@mui/material'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
